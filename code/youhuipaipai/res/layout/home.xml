@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_layout_height"
+        android:background="@drawable/shouye_tabbar_bg" >
+
+        <RadioGroup
+            android:id="@+id/bottom_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/bottom_main_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bottom_to_top"
+                android:layout_weight="1"
+                android:background="@drawable/main_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/bottom_classify_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bottom_to_top"
+                android:layout_weight="1"
+                android:background="@drawable/classify_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/bottom_sign_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/main_middle_height"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/signin_selector"
+                android:gravity="bottom"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/bottom_coupon_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bottom_to_top"
+                android:layout_weight="1"
+                android:background="@drawable/coupon_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/bottom_my_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bottom_to_top"
+                android:layout_weight="1"
+                android:background="@drawable/my_selector"
+                android:button="@null" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

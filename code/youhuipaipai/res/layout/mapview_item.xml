@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout 
+    android:id="@+id/main_linear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fujin_ditu_bg_1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="汗拿山烤肉" />
+
+       
+    </RelativeLayout>
+<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+    <RatingBar
+        android:id="@+id/remark_rg"
+        style="@style/defineRatingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:isIndicator="true"
+        android:rating="0.0"
+        android:stepSize="1.0" />
+ 	<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+             >
+            <ImageView
+                android:id="@+id/sign_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/fujin_zhuye_icon_3" />
+
+            <ImageView
+                android:id="@+id/counpon_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/fujin_zhuye_icon_2" />
+
+            <ImageView
+                android:id="@+id/card_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/fujin_zhuye_icon_1" />
+    </LinearLayout>
+     </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/cost_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp" >
+
+        <TextView
+            android:id="@+id/costper_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小吃" />
+
+        <TextView
+            android:id="@+id/signintegral_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="5km" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/main_linear"
+    android:src="@drawable/fujin_ditu_icon_2" />
+
+</RelativeLayout>

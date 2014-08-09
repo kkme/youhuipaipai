@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/membercard_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/membercard_1"
+        android:padding="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/membercard_have_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="汉拿山烤肉（五道口店）"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/membercard_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/name_tv"
+                android:layout_below="@id/name_tv"
+                android:layout_marginTop="5dp"
+                android:text="7.5折专享卡"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/cardnumber_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/membercard_tv"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:text="NO:255542563"
+                android:textColor="@color/brown" />
+
+            <TextView
+                android:id="@+id/validdate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/cardnumber_tv"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:text="有效期：2013-12.12-20.13.1"
+                android:textColor="@color/brown" />
+
+
+            <TextView
+                android:id="@+id/validateCount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/validdate_tv"
+                android:layout_alignBottom="@id/validdate_tv"
+                android:textColor="@color/white"
+                android:text="1111111111"
+                android:layout_toLeftOf="@id/validdate_tv"
+                android:layout_marginLeft="2dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

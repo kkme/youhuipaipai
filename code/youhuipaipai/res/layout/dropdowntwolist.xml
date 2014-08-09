@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     android:background="@drawable/sousuojieguo_zhuye_shaixuan_bg" 
+    >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#838383"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableBottom="@drawable/sousuojieguo_zhuye_shaixuan_icon_down"
+            android:drawableRight="@drawable/sousuojieguo_zhuye_shaixuan_line"
+            android:gravity="center_horizontal"
+            android:text="全部分类" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="17sp"
+             android:textColor="#838383"
+            android:drawablePadding="3dp"
+            android:drawableBottom="@drawable/sousuojieguo_zhuye_shaixuan_icon_down"
+            android:drawableRight="@drawable/sousuojieguo_zhuye_shaixuan_line"
+            android:gravity="center_horizontal"
+            android:text="全部区域" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+             android:textColor="#838383"
+            android:textSize="17sp"
+            android:drawablePadding="3dp"
+            android:drawableBottom="@drawable/sousuojieguo_zhuye_shaixuan_icon_down"
+            android:gravity="center_horizontal"
+            android:text="默认排序" />
+</LinearLayout>

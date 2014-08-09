@@ -1,0 +1,37 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="defineRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/define_ratingbar</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+    </style>
+
+    <style name="defineRatingBar2" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_layer</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:maxHeight">30dp</item>
+        <item name="android:isIndicator">true</item>
+        
+    </style>
+	 <style name="head_pop_anim_style">
+		<item name="android:windowEnterAnimation">@anim/head_pop_show_anim</item>        <!-- 指定显示的动画xml -->
+		<item name="android:windowExitAnimation">@anim/head_pop_hidden_anim</item>       <!-- 指定消失的动画xml -->
+	</style>
+	 
+</resources>

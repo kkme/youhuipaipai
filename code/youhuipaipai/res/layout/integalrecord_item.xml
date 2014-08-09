@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/jifenjilu_bg"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="+100积分"
+	        android:textColor="@color/red"
+	        android:textSize="20dp"
+	        android:layout_margin="5dp"
+	        android:id="@+id/integralnum_tv"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="用户注册"
+	        android:textColor="@color/light_dark"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="5dp"
+	        android:id="@+id/type_tv"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/time_tv"
+	        android:text="2013.02.03"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/type_tv"
+	        android:layout_marginRight="5dp"
+	        />
+	</RelativeLayout>
+
+</LinearLayout>

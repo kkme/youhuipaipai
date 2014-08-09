@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	android:background="@drawable/head_pop_bg">
+
+
+	<TextView
+		android:id="@+id/mine_head_selected_form_camera"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="从相机取"
+		android:gravity="center"
+		android:background="@drawable/head_pop_w_selector" />
+		
+	<TextView
+		android:id="@+id/mine_head_selected_form_local"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dip"
+		android:text="从图库取"
+		android:gravity="center"
+		android:background="@drawable/head_pop_w_selector" />
+	<TextView
+		android:id="@+id/mine_head_selected_cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dip"
+		android:text="取消"
+		android:gravity="center"
+		android:background="@drawable/head_pop_b_selector" />
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/del_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/maiRelLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/coupon_iv"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                 />
+
+            <TextView
+                android:id="@+id/merchantname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/coupon_iv"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/coupon_iv"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="闻记羊蝎子火锅" />
+
+            <TextView
+                android:id="@+id/integral_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/merchantname_tv"
+                android:layout_alignLeft="@+id/merchantname_tv"
+                android:textStyle="bold" 
+                android:textColor="@color/tomato"
+                android:text="免费" />
+
+            <TextView
+                android:id="@+id/coupontime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/merchantname_tv"
+                android:layout_below="@+id/integral_tv"
+                android:textColor="@color/lightgrey"
+                android:textSize="14sp"
+                android:text="2013.3.23-2013.4.1" />
+
+            <TextView
+                android:id="@+id/merchanttype_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/merchantname_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:text="火锅" />
+
+            <TextView
+                android:id="@+id/received_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/coupon_iv"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/remenyouhuiquan_zhuye_tuangou"
+                android:gravity="bottom"
+                android:paddingLeft="5dp"
+                android:textStyle="italic"
+                android:textColor="@color/blue"
+                android:layout_marginRight="2dp"
+                android:textSize="12sp"
+                android:text="244" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

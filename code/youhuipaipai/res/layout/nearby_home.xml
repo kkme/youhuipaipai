@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/shouye_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shouye_topbar"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="主页" 
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/topback_selector"
+          	android:id="@+id/left_tv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="地图" 
+            android:id="@+id/map_tv"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="附近" 
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:drawableBottom="@drawable/topbar_icon_up"
+            android:id="@+id/nearby_tv"
+            />
+    </RelativeLayout>
+	<fragment
+        android:id="@+id/dropdownTwolistFragment"
+        android:name="com.example.youhuipaipai.fragment.DropdownTwolistFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.example.youhuipaipai.view.XListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:id="@+id/lv"
+			android:background="#fff"
+            android:cacheColorHint="#0000"
+            android:divider="#F5F5F5"
+            android:dividerHeight="0.5dp"
+            android:scrollingCache="false"
+			>
+        </com.example.youhuipaipai.view.XListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" 
+            android:background="@drawable/refresh_bg"
+            >
+			<LinearLayout 
+			    android:layout_width="50dp"
+			    android:layout_height="40dp"
+			    android:layout_gravity="center_vertical"
+			    android:id="@+id/refresh_ll"
+			    >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" 
+                android:id="@+id/refresh_iv"
+                android:layout_gravity="center"
+                android:background="@drawable/refresh_icon"
+                />
+			</LinearLayout>
+            <TextView
+                android:id="@+id/mylocation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前位置:" 
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

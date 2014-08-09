@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+      <CheckBox
+          android:id="@+id/del_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listboxbg_selector" 
+        android:id="@+id/showcontent_rl"
+        >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新通知"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/title_tv"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shouye_box2_right" 
+            android:id="@+id/arrow_iv"
+            />
+        
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2014年1月20日" 
+            android:layout_toLeftOf="@id/arrow_iv"
+            android:layout_marginRight="10dp"
+            
+            />
+    </RelativeLayout>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fsdfsdfsdf"
+        android:textColor="@color/light_dark"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/content_tv"
+        />
+</LinearLayout>

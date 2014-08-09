@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/exit_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/axure_middle_publish_photo_dialog_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/axure_home_travelside_activity_comment_tv_bg"
+            android:gravity="center"
+            android:text="邮件分享"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_sina"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/axure_home_travelside_activity_comment_tv_bg"
+            android:gravity="center"
+            android:text="分享到新浪微博"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/axure_home_travelside_activity_comment_tv_bg"
+            android:gravity="center"
+            android:text="分享到腾讯微博"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_weixin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/axure_home_travelside_activity_comment_tv_bg"
+            android:gravity="center"
+            android:text="分享到微信朋友圈"
+            android:textSize="20sp" />
+         <Button
+            android:id="@+id/btn_weixin_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/axure_home_travelside_activity_comment_tv_bg"
+            android:gravity="center"
+            android:text="分享给微信好友"
+            android:textSize="20sp" />
+          <Button
+            android:id="@+id/btn_send_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/axure_home_travelside_activity_comment_tv_bg"
+            android:gravity="center"
+            android:text="短信分享"
+            android:textSize="20sp" />
+           <Button
+            android:id="@+id/btn_save_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/axure_home_travelside_activity_comment_tv_bg"
+            android:gravity="center"
+            android:text="保存图片"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/axure_middle_publish_photo_dialog_btn_cancel_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
